@@ -12,10 +12,10 @@ RUN apk update && \
 	pip install pyvirtualdisplay
 
 
-RUN curl https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz -O && \
-	tar -zxvf geckodriver-v0.11.1-linux64.tar.gz && \
-	mv ./geckodriver /usr/local/bin/ && \
-	chmod a+x /usr/local/bin/geckodriver
+#RUN curl https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz -O && \
+#	tar -zxvf geckodriver-v0.11.1-linux64.tar.gz && \
+#	mv ./geckodriver /usr/local/bin/ && \
+#	chmod a+x /usr/local/bin/geckodriver
 
-COPY ./geckodriver /usr/local/bin/
-RUN chmod a+x /usr/local/bin/geckodriver
+#COPY ./geckodriver /usr/local/bin/
+#RUN chmod a+x /usr/local/bin/geckodriver
